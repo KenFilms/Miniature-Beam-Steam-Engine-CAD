@@ -1,5 +1,5 @@
 # Mini Beam Steam Engine
-### Originally designed by Lutz Hielscher
+This steam engine model was originally designed by Lutz Hielscher. I bought this model off eBay and then created the CAD model from my own measurements of this model.
 
 3D CAD drawings for YouTube demonstration video.
 You will need [FreeCAD](https://www.freecad.org/index.php) with [Assembly_4](https://wiki.freecad.org/Assembly4_Workbench) installed to view CAD files.
