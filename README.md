@@ -2,7 +2,7 @@
 This steam engine model was originally designed by Lutz Hielscher. I bought this model off eBay and then created the CAD model from my own measurements of this model. This model is not a 100% accurate and does not contain all parts. I created it for the purpose of creating an educational video on YouTube.
 
 3D CAD drawings for YouTube demonstration video.
-You will need [FreeCAD](https://www.freecad.org/index.php) with [Assembly_4](https://wiki.freecad.org/Assembly4_Workbench) installed to view CAD files.
+You will need [FreeCAD](https://www.freecad.org/index.php) with [Assembly_4_Workbench](https://wiki.freecad.org/Assembly4_Workbench) installed to view CAD files.
 
 This steam engine is featured in this [YouTube video](https://www.youtube.com/@tproc).
 
