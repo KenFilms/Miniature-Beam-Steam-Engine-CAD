@@ -93,7 +93,11 @@
       color: #fff;
       padding: 4rem 1.25rem 3rem;
       text-align: center;
+      position: relative;
     }
+    .top-nav { position: absolute; top: 1rem; left: 1.25rem; }
+    .top-nav a { color: #fff; text-decoration: none; font-weight: 600; opacity: .85; }
+    .top-nav a:hover { opacity: 1; text-decoration: underline; }
     header h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
     header p { margin: 0 auto 1.75rem; max-width: 46rem; font-size: 1.15rem; opacity: .92; }
     .buttons { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
@@ -146,6 +150,7 @@
 </head>
 <body>
   <header>
+    <nav class="top-nav"><a href="https://kenfilms.github.io/">← All projects</a></nav>
     <h1>🚂 Miniature Beam Steam Engine</h1>
     <p>A free, open-source <strong>3D CAD model of a miniature beam steam engine</strong>, made in <strong>FreeCAD</strong> with the <strong>Assembly4 workbench</strong>. Use it to study or teach how a model steam engine turns the piston's up-and-down motion into rotation.</p>
     <div class="buttons">
@@ -210,7 +215,7 @@
   </main>
 
   <footer>
-    © 2023 Ken Friedl · <a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD">Source on GitHub</a>
+    © 2023 Ken Friedl · <a href="https://kenfilms.github.io/">More projects</a> · <a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD">Source on GitHub</a>
   </footer>
 </body>
 </html>
