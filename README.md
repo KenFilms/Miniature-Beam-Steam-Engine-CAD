@@ -10,6 +10,12 @@ A free, open-source **3D CAD model of a miniature beam steam engine**, made in *
 
 ![3D CAD rendering of a miniature beam steam engine in FreeCAD showing the rocking beam, cylinder, crank and flywheel](docs/steam_engine_overview.png)
 
+## 🎥 Video: How a beam steam engine works
+
+You can see this miniature steam engine in action in the YouTube video:
+
+[![YouTube video: how a miniature beam steam engine works](https://img.youtube.com/vi/Y00JR4w22Pw/hqdefault.jpg)](https://youtu.be/Y00JR4w22Pw)
+
 ## 📖 About this beam steam engine model
 
 ### What is a beam engine?
@@ -27,12 +33,6 @@ This repository may be useful to:
 - 🖥️ **FreeCAD users** looking for an example Assembly4 mechanism
 
 > ⚠️ **Note:** The model is based on my own measurements, so it is not 100% accurate and does not include every part. It is good for showing how the engine moves, but it is not meant to be used as a manufacturing drawing.
-
-## 🎥 Video: How a beam steam engine works
-
-You can see this miniature steam engine in action in the YouTube video:
-
-[![YouTube video: how a miniature beam steam engine works](https://img.youtube.com/vi/Y00JR4w22Pw/hqdefault.jpg)](https://youtu.be/Y00JR4w22Pw)
 
 ## 📂 Repository Contents
 
