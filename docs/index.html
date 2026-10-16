@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Miniature Beam Steam Engine – Free FreeCAD 3D CAD Model</title>
+  <meta name="description" content="Free, open-source 3D CAD model of a miniature beam steam engine made in FreeCAD with the Assembly4 workbench. Learn how a beam steam engine works and watch the educational YouTube video.">
+  <meta name="keywords" content="beam engine, steam engine, miniature steam engine, model steam engine, FreeCAD, Assembly4, CAD model, 3D model, live steam, model engineering, mechanical engineering, education">
+  <meta name="author" content="Ken Friedl">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2f3061">
+  <link rel="canonical" href="https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Miniature Beam Steam Engine – Free FreeCAD 3D CAD Model">
+  <meta property="og:description" content="Free, open-source 3D CAD model of a miniature beam steam engine made in FreeCAD. Learn how a beam steam engine works.">
+  <meta property="og:url" content="https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/">
+  <meta property="og:image" content="https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/steam_engine_overview.png">
+  <meta property="og:image:width" content="1952">
+  <meta property="og:image:height" content="1061">
+  <meta property="og:image:alt" content="3D CAD rendering of a miniature beam steam engine in FreeCAD">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Miniature Beam Steam Engine – Free FreeCAD 3D CAD Model">
+  <meta name="twitter:description" content="Free, open-source 3D CAD model of a miniature beam steam engine made in FreeCAD. Learn how a beam steam engine works.">
+  <meta name="twitter:image" content="https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/steam_engine_overview.png">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚂</text></svg>">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "3DModel",
+        "name": "Miniature Beam Steam Engine CAD Model",
+        "description": "3D CAD model of a miniature beam steam engine created in FreeCAD with the Assembly4 workbench, based on an original design by Lutz Hielscher.",
+        "image": "https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/steam_engine_overview.png",
+        "url": "https://kenfilms.github.io/Miniature-Beam-Steam-Engine-CAD/",
+        "encodingFormat": "application/x-freecad",
+        "contentUrl": "https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD/raw/main/steam_engine_mechanism.FCStd",
+        "license": "https://opensource.org/licenses/MIT",
+        "isAccessibleForFree": true,
+        "author": { "@type": "Person", "name": "Ken Friedl", "url": "https://github.com/KenFilms" },
+        "keywords": "beam engine, steam engine, FreeCAD, Assembly4, CAD, 3D model, model engineering",
+        "sameAs": "https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD"
+      },
+      {
+        "@type": "VideoObject",
+        "name": "This Tiny Steam Engine Is Amazing! Build, Test, Explanation",
+        "description": "Educational video explaining how a miniature beam steam engine works, using this 3D CAD model.",
+        "thumbnailUrl": "https://img.youtube.com/vi/Y00JR4w22Pw/hqdefault.jpg",
+        "uploadDate": "2023-07-28T02:30:15-07:00",
+        "embedUrl": "https://www.youtube-nocookie.com/embed/Y00JR4w22Pw",
+        "contentUrl": "https://youtu.be/Y00JR4w22Pw"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --fg: #1f2330;
+      --muted: #5b6275;
+      --accent: #2f3061;
+      --accent-2: #8a3a5c;
+      --card: #ffffff;
+      --border: #e2e5ee;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12141c;
+        --fg: #e8eaf1;
+        --muted: #a3a9ba;
+        --accent: #9ea3ff;
+        --accent-2: #e58fb2;
+        --card: #1b1e29;
+        --border: #2c3040;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--fg);
+      background: var(--bg);
+    }
+    a { color: var(--accent); }
+    header {
+      background: linear-gradient(160deg, #2f3061 0%, #6c6fa8 100%);
+      color: #fff;
+      padding: 4rem 1.25rem 3rem;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 .75rem; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; }
+    header p { margin: 0 auto 1.75rem; max-width: 46rem; font-size: 1.15rem; opacity: .92; }
+    .buttons { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: .7rem 1.3rem;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    .btn.primary { background: #fff; color: #2f3061; }
+    .btn:hover { opacity: .85; }
+    main { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem 3rem; }
+    figure { margin: -1.5rem 0 2.5rem; }
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+      display: block;
+    }
+    figcaption { text-align: center; color: var(--muted); font-size: .9rem; margin-top: .6rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    section h2 { margin-top: 0; }
+    .note {
+      border-left: 4px solid var(--accent-2);
+      padding: .75rem 1rem;
+      background: color-mix(in srgb, var(--accent-2) 8%, transparent);
+      border-radius: 0 8px 8px 0;
+    }
+    .video {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+    ul.audience { list-style: none; padding: 0; }
+    ul.audience li { margin: .4rem 0; }
+    footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 2rem 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🚂 Miniature Beam Steam Engine</h1>
+    <p>A free, open-source <strong>3D CAD model of a miniature beam steam engine</strong>, made in <strong>FreeCAD</strong> with the <strong>Assembly4 workbench</strong>. Use it to study or teach how a model steam engine turns the piston's up-and-down motion into rotation.</p>
+    <div class="buttons">
+      <a class="btn primary" href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD/raw/main/steam_engine_mechanism.FCStd">⬇️ Download CAD model</a>
+      <a class="btn" href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD">View on GitHub</a>
+      <a class="btn" href="https://youtu.be/Y00JR4w22Pw">▶️ Watch on YouTube</a>
+    </div>
+  </header>
+
+  <main>
+    <figure>
+      <img src="steam_engine_overview.png" width="1952" height="1061"
+           alt="3D CAD rendering of a miniature beam steam engine in FreeCAD showing the rocking beam, cylinder, crank and flywheel">
+      <figcaption>FreeCAD rendering of the miniature beam steam engine</figcaption>
+    </figure>
+
+    <section id="what-is-a-beam-engine">
+      <h2>📖 What is a beam engine?</h2>
+      <p>A <strong>beam engine</strong> is one of the earliest types of <strong>steam engine</strong>, first used in the 18th century to pump water out of mines. The piston pushes a rocking beam that pivots overhead. The beam drives a connecting rod and crank, which turn the flywheel and change the piston's up-and-down motion into rotation.</p>
+    </section>
+
+    <section id="about">
+      <h2>🔧 About this model</h2>
+      <p>The original <strong>miniature beam steam engine</strong> was designed by <strong>Lutz Hielscher</strong>. I bought one on eBay, measured it by hand and rebuilt it as a <strong>FreeCAD assembly</strong>. I made the model for an <strong>educational YouTube video</strong> that explains how a steam engine works.</p>
+      <p>This model may be useful to:</p>
+      <ul class="audience">
+        <li>🎓 <strong>Students and teachers</strong> learning about steam power, thermodynamics or mechanisms</li>
+        <li>🔧 <strong>Model engineers and hobbyists</strong> interested in live steam and miniature steam engines</li>
+        <li>🖥️ <strong>FreeCAD users</strong> looking for an example Assembly4 mechanism</li>
+      </ul>
+      <p class="note">⚠️ <strong>Note:</strong> The model is based on my own measurements, so it is not 100% accurate and does not include every part. It is good for showing how the engine moves, but it is not meant to be used as a manufacturing drawing.</p>
+    </section>
+
+    <section id="video">
+      <h2>🎥 Video: How a beam steam engine works</h2>
+      <div class="video">
+        <iframe src="https://www.youtube-nocookie.com/embed/Y00JR4w22Pw"
+                title="YouTube video: how a miniature beam steam engine works"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="getting-started">
+      <h2>🚀 How to open the steam engine CAD model</h2>
+      <ol>
+        <li>Install <a href="https://www.freecad.org/index.php">FreeCAD</a>.</li>
+        <li>Install the <a href="https://wiki.freecad.org/Assembly4_Workbench">Assembly4 Workbench</a> from FreeCAD's <strong>Tools → Addon Manager</strong>.</li>
+        <li><a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD/raw/main/steam_engine_mechanism.FCStd">Download <code>steam_engine_mechanism.FCStd</code></a> and open it in FreeCAD.</li>
+      </ol>
+    </section>
+
+    <section id="credits">
+      <h2>🙏 Credits &amp; license</h2>
+      <ul>
+        <li>Original engine design: <strong>Lutz Hielscher</strong></li>
+        <li>CAD model and video: <strong>Ken Friedl</strong> (<a href="https://github.com/KenFilms">KenFilms</a>)</li>
+      </ul>
+      <p>Released under the <a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD/blob/main/LICENSE">MIT License</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2023 Ken Friedl · <a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD">Source on GitHub</a>
+  </footer>
+</body>
+</html>
