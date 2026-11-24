@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Miniature Beam Steam Engine – Free FreeCAD 3D CAD Model</title>
-  <meta name="description" content="Free, open-source 3D CAD model of a miniature beam steam engine made in FreeCAD with the Assembly4 workbench. Learn how a beam steam engine works and watch the educational YouTube video.">
+  <meta name="description" content="Free, open-source 3D CAD model of a miniature beam steam engine made in FreeCAD with the Assembly4 workbench. Labeled parts, animations of the movement cycle, the brass kit build and how the rotary valve works, with the educational YouTube video.">
   <meta name="keywords" content="beam engine, steam engine, miniature steam engine, model steam engine, FreeCAD, Assembly4, CAD model, 3D model, live steam, model engineering, mechanical engineering, education">
   <meta name="author" content="Ken Friedl">
   <meta name="robots" content="index, follow">
@@ -113,15 +113,32 @@
     .btn.primary { background: #fff; color: #2f3061; }
     .btn:hover { opacity: .85; }
     main { max-width: 60rem; margin: 0 auto; padding: 0 1.25rem 3rem; }
-    figure { margin: -1.5rem 0 2.5rem; }
+    figure { margin: 0; }
     figure img {
       width: 100%;
       height: auto;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+      border-radius: 10px;
       display: block;
     }
+    figure.hero { margin: -1.5rem 0 2.5rem; position: relative; }
+    figure.hero img, figure.overview img {
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    }
+    figure.overview { margin: 0 0 2.5rem; }
     figcaption { text-align: center; color: var(--muted); font-size: .9rem; margin-top: .6rem; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin: 1rem 0;
+      align-items: start;
+    }
+    @media (max-width: 40rem) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    .key { color: var(--muted); }
+    section h3 { margin-bottom: .4rem; }
     section {
       background: var(--card);
       border: 1px solid var(--border);
@@ -161,10 +178,16 @@
   </header>
 
   <main>
-    <figure>
-      <img src="steam_engine_overview.png" width="1952" height="1061"
-           alt="3D CAD rendering of a miniature beam steam engine in FreeCAD showing the rocking beam, cylinder, crank and flywheel">
-      <figcaption>FreeCAD rendering of the miniature beam steam engine</figcaption>
+    <figure class="hero">
+      <img src="steam_engine_overview_labeled.png" width="1952" height="1061"
+           alt="3D CAD rendering of a miniature beam steam engine in FreeCAD with the parts labeled as in the kit: beam, column, piston rod/cylinder assembly, valve, eccentric rod, connection rod, crank, crankshaft support, flywheel and base plate">
+      <figcaption>The FreeCAD model, labeled with the part names from the kit</figcaption>
+    </figure>
+
+    <figure class="overview">
+      <img src="brass_overview_labeled.jpg" width="1920" height="1012" loading="lazy"
+           alt="Real brass miniature beam steam engine running on its glass boiler, with labeled parts: boiler, folding hose from gas lighter, steam pipe, piston rod/cylinder assembly, valve, condensed water collection tank, eccentric rod, beam, column, connection rod, flywheel and base plate">
+      <figcaption>The real brass engine from the video, labeled with the same part names</figcaption>
     </figure>
 
     <section id="video">
@@ -176,6 +199,83 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
       </div>
+    </section>
+
+    <section id="movement-cycle">
+      <h2>🔄 The movement cycle</h2>
+      <p>The piston moves up and down, rocks the beam, and the connecting rod turns the crank and the flywheel. On the left is one full revolution of the CAD model, seen from the back. On the right is the real brass engine running on steam.</p>
+      <div class="grid-2">
+        <figure>
+          <img src="movement_cycle_cad.gif" width="640" height="401" loading="lazy"
+               alt="Animated CAD model of the beam steam engine seen from the back, showing one full revolution of crank, beam and piston">
+          <figcaption>CAD model (rear view) · <a href="https://youtu.be/Y00JR4w22Pw?t=1028" target="_blank" rel="noopener">watch at 17:08</a></figcaption>
+        </figure>
+        <figure>
+          <img src="movement_cycle_brass.gif" width="480" height="355" loading="lazy"
+               alt="The real brass miniature beam steam engine running slowly on steam from its glass boiler">
+          <figcaption>Real brass engine · <a href="https://youtu.be/Y00JR4w22Pw?t=851" target="_blank" rel="noopener">watch at 14:11</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="building">
+      <h2>🔧 Building the brass model</h2>
+      <p>The real engine is a brass kit by Lutz Hielscher. These frames from the video show it going from parts to a running machine. Click a picture to jump to that moment in the video.</p>
+      <div class="grid-2">
+        <figure>
+          <a href="https://youtu.be/Y00JR4w22Pw?t=68" target="_blank" rel="noopener"><img src="brass_parts_kit.jpg" width="960" height="506" loading="lazy"
+               alt="Labeled parts of the brass miniature beam steam engine kit: boiler, steam pipe, cylinder, valve, beam, column, flywheel, crank, connection rod, eccentric rod and base plate"></a>
+          <figcaption>1. The parts of the kit</figcaption>
+        </figure>
+        <figure>
+          <a href="https://youtu.be/Y00JR4w22Pw?t=131" target="_blank" rel="noopener"><img src="brass_valve_fitting.jpg" width="960" height="506" loading="lazy"
+               alt="The rotary valve disc being placed on the port face of the brass cylinder with tweezers"></a>
+          <figcaption>2. Fitting the rotary valve</figcaption>
+        </figure>
+        <figure>
+          <a href="https://youtu.be/Y00JR4w22Pw?t=503" target="_blank" rel="noopener"><img src="brass_assembled.jpg" width="960" height="600" loading="lazy"
+               alt="The assembled brass beam engine with cylinder, column, beam and flywheel on its base plate"></a>
+          <figcaption>3. The assembled engine</figcaption>
+        </figure>
+        <figure>
+          <a href="https://youtu.be/Y00JR4w22Pw?t=756" target="_blank" rel="noopener"><img src="brass_finished.jpg" width="960" height="600" loading="lazy"
+               alt="The finished brass miniature beam steam engine with glass boiler on its stand"></a>
+          <figcaption>4. The finished machine with boiler</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="rotary-valve">
+      <h2>⚙️ How the rotary valve works</h2>
+      <p>The cylinder is <strong>double-acting</strong>: steam pushes the piston both down and up. A small <strong>rotary valve</strong> on the side of the cylinder decides which end gets the steam. The <strong>eccentric rod</strong> from the crank rocks the valve back and forth between two positions. The screenshots below come from the CAD model in the video (<a href="https://youtu.be/Y00JR4w22Pw?t=910" target="_blank" rel="noopener">watch from 15:10</a>).</p>
+      <p class="key">🟧 <strong>Orange</strong> = fresh steam from the boiler &nbsp; 🟦 <strong>Blue</strong> = used steam going out to the condenser</p>
+      <div class="grid-2">
+        <figure>
+          <img src="valve_steam_to_top.jpg" width="640" height="675" loading="lazy"
+               alt="Rotary valve sending steam to the upper end of the double-acting cylinder while the lower end exhausts">
+          <figcaption>Steam to the top → piston moves <strong>down</strong></figcaption>
+        </figure>
+        <figure>
+          <img src="valve_steam_to_bottom.jpg" width="640" height="675" loading="lazy"
+               alt="Rotary valve sending steam to the lower end of the double-acting cylinder while the upper end exhausts">
+          <figcaption>Steam to the bottom → piston moves <strong>up</strong></figcaption>
+        </figure>
+      </div>
+
+      <h3>The 90° phase shift</h3>
+      <p>The valve must not move in step with the piston. It has to be <strong>90° behind the crank</strong>. When the piston is moving fastest in the middle of the cylinder, the valve stands still. When the piston reaches the end of its stroke, the valve switches over. If the valve and crank were at the same angle, the engine would not move at all.</p>
+      <p>This design gets the 90° for free: the cylinder sits beside the crank, so the eccentric rod is already at a right angle to the connecting rod (<a href="https://youtu.be/Y00JR4w22Pw?t=1085" target="_blank" rel="noopener">watch at 18:05</a>).</p>
+      <figure>
+        <img src="valve_phase_shift_90deg.jpg" width="960" height="506" loading="lazy"
+             alt="CAD model showing the 90 degree angle between the piston rod and the eccentric rod">
+      </figure>
+
+      <h3>Reversing the direction</h3>
+      <p>To make the flywheel turn the other way, shift the valve by <strong>180°</strong> relative to the crank. You could attach the eccentric rod on the opposite side of the crank. It is even easier to turn the valve itself by 180° (<a href="https://youtu.be/Y00JR4w22Pw?t=1132" target="_blank" rel="noopener">watch at 18:52</a>). At the end of the video, the real engine runs in reverse (<a href="https://youtu.be/Y00JR4w22Pw?t=1150" target="_blank" rel="noopener">watch at 19:10</a>).</p>
+      <figure>
+        <img src="valve_reverse_direction_180deg.jpg" width="960" height="630" loading="lazy"
+             alt="CAD model showing the rotary valve turned by 180 degrees to reverse the rotation of the flywheel">
+      </figure>
     </section>
 
     <section id="what-is-a-beam-engine">
@@ -217,5 +317,49 @@
   <footer>
     © 2023 Ken Friedl · <a href="https://kenfilms.github.io/">More projects</a> · <a href="https://github.com/KenFilms/Miniature-Beam-Steam-Engine-CAD" target="_blank" rel="noopener">Source on GitHub</a>
   </footer>
+<!-- Page counter for the GitHub traffic dashboard (Github_Dashboard/deploy/page-counter.html).
+     Counts page visits (once per page and browser session, sent with only the name of the site
+     the visitor came from) and, on web-flasher pages, finished / failed installs and .bin clicks.
+     Anonymous: no cookies, nothing about the visitor is kept, the server stores no IP address.
+     Add or update it with: python3 deploy/install-counter.py <repo-name> <page.html>... -->
+<script>
+(function () {
+  var REPO = 'Miniature-Beam-Steam-Engine-CAD', ENDPOINT = 'https://count.204-168-207-90.sslip.io/';
+  function ping(path, params) {
+    params.p = REPO;
+    var url = ENDPOINT + path + '?' + new URLSearchParams(params);
+    try { if (navigator.sendBeacon && navigator.sendBeacon(url)) return; } catch (e) {}
+    try { fetch(url, { method: 'POST', mode: 'no-cors', keepalive: true }); } catch (e) {}
+  }
+  // One visit per page and browser session (reloads do not count again); crawlers are skipped.
+  if (!navigator.webdriver && !/bot|crawl|spider|slurp|headless|lighthouse/i.test(navigator.userAgent)) {
+    var seen = false, key = 'page-counter:' + location.pathname;
+    try { seen = !!sessionStorage.getItem(key); sessionStorage.setItem(key, '1'); } catch (e) {}
+    if (!seen) {
+      var from = '';
+      try { from = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
+      ping('view', { u: location.pathname, r: from });
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href$=".bin"]');
+    if (a) ping('download', { f: a.getAttribute('href').split('/').pop() });
+  }, true);
+  // Web-flasher pages only. ESP Web Tools has no public "flash finished" event; its dialog
+  // keeps the result in _installState.
+  if (!document.querySelector('esp-web-install-button')) return;
+  var reported = new WeakSet();
+  setInterval(function () {
+    var dialogs = document.querySelectorAll('ewt-install-dialog');
+    for (var i = 0; i < dialogs.length; i++) {
+      var s = dialogs[i]._installState;
+      if (!s || reported.has(s) || (s.state !== 'finished' && s.state !== 'error')) continue;
+      reported.add(s);
+      ping('flash', { s: s.state === 'finished' ? 'ok' : 'fail', c: s.chipFamily || '',
+        v: (s.manifest && s.manifest.version) || '' });
+    }
+  }, 1000);
+})();
+</script>
 </body>
 </html>
